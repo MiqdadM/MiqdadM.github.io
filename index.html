@@ -2,10 +2,30 @@
 	<head>
 		<title> Test Box Static Page From Github Pages
 		</title>
-	</head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.js"></script>
+		<script type="text/javascript">$(function() {
+        $('.map').maphilight();
+        $('#squidheadlink').mouseover(function(e) {
+            $('#squidhead').mouseover();
+        }).mouseout(function(e) {
+            $('#squidhead').mouseout();
+        }).click(function(e) { e.preventDefault(); });
+		});</script>
+		</head>
 	
 	<body>
 		<p> Coba Github Pages -> Klik Untuk Menuju MiqdadM Github <a href="https://github.com/MiqdadM"> Klik Disin </a>
+		</p>
+		<p>
+		<img src="http://graph.facebook.com/1630898110503685/picture" class="map" usemap="#simple">
+		<map name="simple">
+		<area href="#" shape="poly" coords="3,274,79,243,289,253,312,250,553,261,551,264,650,272,644,280,518,273,314,262,294,269,270,264,85,257,11,285" data-maphilight='{"stroke":false,"fillColor":"FF5CFF","fillOpacity":0.6,"alwaysOn":true}' alt="tanggul" title="Rubah Warna">
+		<area href="#" shape="poly" coords="321,249,371,195,546,260" data-maphilight='{"stroke":false,"fillColor":"FFFF5C","fillOpacity":0.6,"alwaysOn":true}' alt="genteng" title="Rubah Warna">
+		<area href="#" shape="poly" coords="295,251,349,198,363,194,310,249" data-maphilight='{"stroke":false,"fillColor":"5C5CFF","fillOpacity":0.6,"alwaysOn":true}' alt="genteng" title="Rubah Warna">
+		<area href="#" shape="poly" coords="90,242,257,156,319,163,499,230,539,231,641,269,554,262,370,190,347,194,291,254" alt="genteng" title="Rubah Warna">
+		</map>
 		</p>
 	</body>
 </html>
